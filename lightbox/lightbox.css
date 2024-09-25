@@ -1,0 +1,197 @@
+.lbox {
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+
+}
+
+.lbox:target {
+	visibility: visible;
+	width: 100%;
+	height: 90%;
+	top:10%;
+	left: 0;
+	background: rgba(10,10,10,.7);
+	position: fixed;
+	z-index: 100;
+}
+
+
+.box_img {
+	width: auto;
+	height: 165%;
+	margin: 5px auto;
+	z-index: 100;
+}
+
+.bttn {
+	color: #fff;
+	font-family: Arial;
+	text-decoration: none;
+	position: absolute;
+	width: 60px;
+	height: 80px;
+	padding: 12px;
+	font-size: 40px;
+	text-align: center;
+	border-radius: 40px;
+}
+
+.bttn:hover {
+
+	border-radius: 90px;
+	background-color: black;
+	color: #fff;
+	padding: 10px;
+
+}
+
+#prev {
+	left: 6%;
+	top: 50%;
+}
+
+#next {
+	right: 6%;
+	top: 50%;
+}
+
+#close {
+	top: 12%;
+	right: 8%;
+}
+
+#close:target {
+
+}
+
+.box_img img {
+
+	height: 40%;
+	border: 2px solid #fff;
+	opacity: 0;
+}
+
+@media screen and (min-width: 606px){
+.lbox:target  .box_img img {
+	top: 2%;
+	height: 60%;
+	opacity: 1;
+	transition: opacity .4s linear;
+
+}
+.lbox:target {
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	padding: 5%;
+	top:6%;
+	left: 0;
+	background: rgba(10,10,10,.7);
+	position: fixed;
+	z-index: 100;
+}
+}
+
+
+@media screen and (max-width: 606px){
+
+.lbox:target  .box_img{
+	box-sizing: border-box; 
+	
+
+}
+.lbox:target  .box_img img {
+	height: auto;
+	width: auto;
+	opacity: 1;
+	transition: opacity .4s linear;
+
+}
+.lbox:target {
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	padding: 20%;
+	padding-top: 15%;
+	top:8%;
+	left: 0;
+	background: rgba(10,10,10,.7);
+	position: fixed;
+	z-index: 100;
+}
+#close {
+	top: 5%;
+	right: 8%;
+}
+}
+@media screen and (max-width: 500px){
+
+.lbox:target  .box_img{
+	box-sizing: border-box; 
+	
+
+}
+.lbox:target  .box_img img {
+	height: auto;
+	width: auto;
+	opacity: 1;
+	transition: opacity .4s linear;
+
+}
+.lbox:target {
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	padding: 20%;
+	padding-top: 20%;
+	top:8%;
+	left: 0;
+	background: rgba(10,10,10,.7);
+	position: fixed;
+	z-index: 100;
+}
+#close {
+	top: 5%;
+	right: 8%;
+}
+}
+
+
+@media screen and (max-width: 331px){
+
+.lbox:target  .box_img{
+	box-sizing: border-box; 
+	
+
+}
+.lbox:target  .box_img img {
+	height: auto;
+	width: auto;
+	opacity: 1;
+	transition: opacity .4s linear;
+
+}
+.lbox:target {
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	padding-top: 40%;
+	top:8%;
+	left: 0;
+	background: rgba(10,10,10,.7);
+	position: fixed;
+	z-index: 100;
+}
+#close {
+	top: 5%;
+	right: 8%;
+}
+}
+
+
+
+
